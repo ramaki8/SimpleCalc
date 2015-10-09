@@ -20,7 +20,8 @@ func convert(incoming:String) -> Int {
         return NSNumberFormatter().numberFromString(incoming)!.integerValue
 }
 
-// Fuction to calculate simple operations (addition, subtraction, multiplication, division, and modulus). Takes in 2 numbers and an operator in String form and returns the resultant integer of the operator and the two operands.
+// Fuction to calculate simple operations (addition, subtraction, multiplication, division, and modulus). 
+// Takes in 2 numbers and an operator in String form and returns the resultant integer of the operator and the two operands.
 func simpleOperation(number1 : Int, op: String, number2: Int) -> Int {
     var result = 0
     switch op {
@@ -39,7 +40,8 @@ func simpleOperation(number1 : Int, op: String, number2: Int) -> Int {
     return result
 }
 
-// Function to calculate complex operations (factorial, count, and average). Takes in an array of String input from the user and returns the resultant integer.
+// Function to calculate complex operations (factorial, count, and average). 
+// Takes in an array of String input from the user and returns the resultant integer.
 func complexOperation(inputArray: [String]) -> Int {
     var result = 0
     if inputArray.last! == "fact" { // Calculates factorial
